@@ -1,7 +1,5 @@
 # Ember Wuph
 
-[See a demo](http://jsbin.com/vijen/1)
-
 [![Build](https://travis-ci.org/dockyard/ember-wuph.svg?branch=master)](https://travis-ci.org/dockyard/ember-wuph)
 
 ## About ##
