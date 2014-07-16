@@ -3,7 +3,7 @@ import startApp from '../helpers/start-app';
 
 var App;
 
-module('Acceptance: WuphTest', {
+module('Acceptance: WuphfTest', {
   setup: function() {
     App = startApp();
   },
@@ -18,7 +18,7 @@ test('adding danger message', function() {
   click('button.danger');
 
   andThen(function() {
-    equal(Ember.$('div.wuph-message.danger').text().trim(), 'Danger!');
+    equal(Ember.$('div.wuphf-message.danger').text().trim(), 'Danger!');
   });
 });
 
@@ -28,7 +28,7 @@ test('adding info message', function() {
   click('button.info');
 
   andThen(function() {
-    equal(Ember.$('div.wuph-message.info').text().trim(), 'Info!');
+    equal(Ember.$('div.wuphf-message.info').text().trim(), 'Info!');
   });
 });
 
@@ -38,7 +38,7 @@ test('adding success message', function() {
   click('button.success');
 
   andThen(function() {
-    equal(Ember.$('div.wuph-message.success').text().trim(), 'Success!');
+    equal(Ember.$('div.wuphf-message.success').text().trim(), 'Success!');
   });
 });
 
@@ -48,7 +48,7 @@ test('adding warning message', function() {
   click('button.warning');
 
   andThen(function() {
-    equal(Ember.$('div.wuph-message.warning').text().trim(), 'Warning!');
+    equal(Ember.$('div.wuphf-message.warning').text().trim(), 'Warning!');
   });
 });
 
@@ -58,10 +58,10 @@ test('clicking to dismiss', function() {
   click('button.danger');
 
   andThen(function() {
-    click('div.wuph-message');
+    click('div.wuphf-message');
 
     andThen(function() {
-      ok(!Ember.$('div.wuph-message')[0], 'wuph message should not exist');
+      ok(!Ember.$('div.wuphf-message')[0], 'wuphf message should not exist');
     });
   });
 });

@@ -1,6 +1,6 @@
-# Ember Wuph
+# Ember Wuphf
 
-[![Build](https://travis-ci.org/dockyard/ember-wuph.svg?branch=master)](https://travis-ci.org/dockyard/ember-wuph)
+[![Build](https://travis-ci.org/dockyard/ember-wuphf.svg?branch=master)](https://travis-ci.org/dockyard/ember-wuphf)
 
 ## About ##
 
@@ -9,7 +9,7 @@ Easily add alert messages everywhere in your ember-cli apps
 ## Install ##
 
 ```bash
-npm install ember-wuph --save-dev
+npm install ember-wuphf --save-dev
 ```
 
 ## Usage ##
@@ -18,16 +18,16 @@ In the template you want the alert messages to appear use the
 componenent:
 
 ```handlebars
-{{x-wuph}}
+{{x-wuphf}}
 ```
 
 Write a new message to the alert system for it to appear:
 
 ```js
-this.wuph.info("Thank you for signing up!");
+this.wuphf.info("Thank you for signing up!");
 ```
 
-You can access the `wuph` object from Controllers, Routes, and
+You can access the `wuphf` object from Controllers, Routes, and
 Components.
 
 ### Message Types ###
@@ -35,37 +35,37 @@ Components.
 #### Danger ####
 
 ```js
-this.wuph.danger("Danger message");
+this.wuphf.danger("Danger message");
 ```
 
 #### Info ####
 
 ```js
-this.wuph.info("Info message");
+this.wuphf.info("Info message");
 ```
 
 #### Success ####
 
 ```js
-this.wuph.success("Success message");
+this.wuphf.success("Success message");
 ```
 
 #### Warning ####
 
 ```js
-this.wuph.warning("Warning message");
+this.wuphf.warning("Warning message");
 ```
 
 #### Custom ####
 
 ```js
-this.wuph.pushObject({type: 'custom', message: 'Custom Message');
+this.wuphf.pushObject({type: 'custom', message: 'Custom Message');
 ```
 
 ### Styling ###
 
-The alert container has a class of `.wuph-message-container`. Each
-message has a class of `.wuph-message` as well as the `:type`.
+The alert container has a class of `.wuphf-message-container`. Each
+message has a class of `.wuphf-message` as well as the `:type`.
 
 ### Customizing ###
 
@@ -77,19 +77,19 @@ set an optional timeout for the message to automatically dismiss.
 
 ```js
 // dismiss after 5 seconds
-this.wuph.timeout = 5000;
+this.wuphf.timeout = 5000;
 ```
 
 #### Per-message timeout ####
 
 ```js
 // dismiss after 5 seconds
-this.wuph.info('Info message', 5000);
+this.wuphf.info('Info message', 5000);
 ```
 
 ```js
 // dismiss after 5 seconds
-this.wuph.pushObject({type: 'custom', message: 'Custom Message', timeout: 5000});
+this.wuphf.pushObject({type: 'custom', message: 'Custom Message', timeout: 5000});
 ```
 
 ## Authors ##

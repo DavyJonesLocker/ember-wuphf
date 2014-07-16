@@ -1,6 +1,6 @@
 import { test, moduleForComponent } from 'ember-qunit';
 
-moduleForComponent('x-wuph-message', 'XWuphMessageComponent', {
+moduleForComponent('x-wuphf-message', 'XWuphfMessageComponent', {
   // specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar']
 });

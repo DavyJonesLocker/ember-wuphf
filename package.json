@@ -1,5 +1,5 @@
 {
-  "name": "ember-wuph",
+  "name": "ember-wuphf",
   "version": "0.0.1",
   "private": true,
   "directories": {
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dockyard/ember-wuph.git"
+    "url": "https://github.com/dockyard/ember-wuphf.git"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "homepage": "https://github.com/dockyard/ember-wuph"
+  "homepage": "https://github.com/dockyard/ember-wuphf",
   "author": "Brian Cardarella",
   "license": "MIT",
   "devDependencies": {

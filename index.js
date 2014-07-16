@@ -3,9 +3,9 @@
 var fs   = require('fs');
 var path = require('path');
 
-function EmberWuph(project) {
+function EmberWuphf(project) {
   this.project = project;
-  this.name    = 'EmberWuph';
+  this.name    = 'EmberWuphf';
 }
 
 function unwatchedTree(dir) {
@@ -15,7 +15,7 @@ function unwatchedTree(dir) {
   };
 }
 
-EmberWuph.prototype.treeFor = function treeFor(name) {
+EmberWuphf.prototype.treeFor = function treeFor(name) {
   var treePath = path.relative(process.cwd(), __dirname);
 
   if (name === 'templates' || name === 'styles') {
@@ -29,8 +29,8 @@ EmberWuph.prototype.treeFor = function treeFor(name) {
   }
 };
 
-EmberWuph.prototype.included = function included(app) {
+EmberWuphf.prototype.included = function included(app) {
   this.app = app;
 };
 
-module.exports = EmberWuph;
+module.exports = EmberWuphf;

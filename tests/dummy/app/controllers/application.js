@@ -3,16 +3,16 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     danger: function() {
-      this.wuph.danger("Danger!");
+      this.wuphf.danger("Danger!");
     },
     info: function() {
-      this.wuph.info("Info!");
+      this.wuphf.info("Info!");
     },
     success: function() {
-      this.wuph.success("Success!");
+      this.wuphf.success("Success!");
     },
     warning: function() {
-      this.wuph.warning("Warning!");
+      this.wuphf.warning("Warning!");
     }
   }
 });
