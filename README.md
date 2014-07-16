@@ -62,7 +62,7 @@ this.wuphf.warning("Warning message");
 this.wuphf.pushObject({type: 'custom', message: 'Custom Message');
 ```
 
-##### Register custom types ####
+##### Register custom types #####
 
 If you have a custom type you want to use often you can register it for
 easy use later.
