@@ -114,7 +114,7 @@ this.wuphf.pushObject({type: 'custom', message: 'Custom Message', timeout: 5000}
 
 * [Brian Cardarella](http://twitter.com/bcardarella)
 
-[We are very thankful for the many contributors](https://github.com/dockyard/ember-cli-async-button/graphs/contributors)
+[We are very thankful for the many contributors](https://github.com/dockyard/ember-wuphf/graphs/contributors)
 
 ## Versioning ##
 
@@ -123,7 +123,7 @@ This library follows [Semantic Versioning](http://semver.org)
 ## Want to help? ##
 
 Please do! We are always looking to improve this gem. Please see our
-[Contribution Guidelines](https://github.com/dockyard/ember-cli-async-button/blob/master/CONTRIBUTING.md)
+[Contribution Guidelines](https://github.com/dockyard/ember-wuphf/blob/master/CONTRIBUTING.md)
 on how to properly submit issues and pull requests.
 
 ## Legal ##
