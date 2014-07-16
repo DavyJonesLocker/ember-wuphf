@@ -6,10 +6,6 @@
 
 Easily add alert messages everywhere in your ember-cli apps
 
-<iframe width="560" height="315"
-src="//www.youtube.com/embed/ytc9-wGCHW0" frameborder="0"
-allowfullscreen></iframe>
-
 ## Install ##
 
 ```bash
