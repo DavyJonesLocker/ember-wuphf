@@ -72,9 +72,24 @@ message has a class of `.wuph-message` as well as the `:type`.
 By default messages only disappear after a user clicks on it. You can
 set an optional timeout for the message to automatically dismiss.
 
+
+#### Global timeout ####
+
 ```js
 // dismiss after 5 seconds
 this.wuph.timeout = 5000;
+```
+
+#### Per-message timeout ####
+
+```js
+// dismiss after 5 seconds
+this.wuph.info('Info message', 5000);
+```
+
+```js
+// dismiss after 5 seconds
+this.wuph.pushObject({type: 'custom', message: 'Custom Message', timeout: 5000});
 ```
 
 ## Authors ##

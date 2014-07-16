@@ -12,13 +12,53 @@ test('it exists', function() {
   ok(service);
 });
 
-test('when timeout set message is automatically removed', function() {
+test('global timeout', function() {
   var service = this.subject();
   service.set('timeout', 500);
-  service.danger('oh no!');
+  service.danger('test');
   stop();
   Ember.run.later(this, function() {
     equal(service.get('content.length'), 0);
     start();
   }, 500);
+});
+
+test('danger timeout', function() {
+  var service = this.subject();
+  service.danger('test', 200);
+  stop();
+  Ember.run.later(this, function() {
+    equal(service.get('content.length'), 0);
+    start();
+  }, 200);
+});
+
+test('info timeout', function() {
+  var service = this.subject();
+  service.info('test', 200);
+  stop();
+  Ember.run.later(this, function() {
+    equal(service.get('content.length'), 0);
+    start();
+  }, 200);
+});
+
+test('success timeout', function() {
+  var service = this.subject();
+  service.success('test', 200);
+  stop();
+  Ember.run.later(this, function() {
+    equal(service.get('content.length'), 0);
+    start();
+  }, 200);
+});
+
+test('warning timeout', function() {
+  var service = this.subject();
+  service.warning('test', 200);
+  stop();
+  Ember.run.later(this, function() {
+    equal(service.get('content.length'), 0);
+    start();
+  }, 200);
 });

@@ -8,34 +8,38 @@ export default Ember.ArrayProxy.extend({
     var _this = this;
     this._super(object);
 
-    if (this.timeout) {
+    if (object.timeout || this.timeout) {
       setTimeout(function() {
         _this.removeObject(object);
-      }, this.timeout);
+      }, object.timeout || this.timeout);
     }
   },
-  danger: function(message) {
+  danger: function(message, timeout) {
     this.pushObject({
       type: 'danger',
-      message: message
+      message: message,
+      timeout: timeout
     });
   },
-  warning: function(message) {
-    this.pushObject({
-      type: 'warning',
-      message: message
-    });
-  },
-  info: function(message) {
+  info: function(message, timeout) {
     this.pushObject({
       type: 'info',
-      message: message
+      message: message,
+      timeout: timeout
     });
   },
-  success: function(message) {
+  success: function(message, timeout) {
     this.pushObject({
       type: 'success',
-      message: message
+      message: message,
+      timeout: timeout
+    });
+  },
+  warning: function(message, timeout) {
+    this.pushObject({
+      type: 'warning',
+      message: message,
+      timeout: timeout
     });
   }
 });
