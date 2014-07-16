@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.ArrayProxy.extend({
+  initTypes: Ember.on('init', function() {
+    this.registerTypes('danger', 'info', 'warning', 'success');
+  }),
   content: Ember.computed(function() {
     return Ember.A();
   }),
@@ -14,32 +17,18 @@ export default Ember.ArrayProxy.extend({
       }, object.timeout || this.timeout);
     }
   },
-  danger: function(message, timeout) {
-    this.pushObject({
-      type: 'danger',
-      message: message,
-      timeout: timeout
-    });
+  registerType: function(type) {
+    this[type] = function(message, timeout) {
+      this.pushObject({
+        type: type,
+        message: message,
+        timeout: timeout
+      });
+    };
   },
-  info: function(message, timeout) {
-    this.pushObject({
-      type: 'info',
-      message: message,
-      timeout: timeout
-    });
-  },
-  success: function(message, timeout) {
-    this.pushObject({
-      type: 'success',
-      message: message,
-      timeout: timeout
-    });
-  },
-  warning: function(message, timeout) {
-    this.pushObject({
-      type: 'warning',
-      message: message,
-      timeout: timeout
-    });
+  registerTypes: function() {
+    for (var i = 0; i < arguments.length; i++) {
+      this.registerType(arguments[i]);
+    }
   }
 });

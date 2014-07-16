@@ -62,6 +62,24 @@ this.wuphf.warning("Warning message");
 this.wuphf.pushObject({type: 'custom', message: 'Custom Message');
 ```
 
+##### Register custom types ####
+
+If you have a custom type you want to use often you can register it for
+easy use later.
+
+```js
+this.wuphf.registerType('emergency');
+this.wuphf.emergency('Oh no!');
+```
+
+You can register multiple types at once with the plural form:
+
+```js
+this.wuphf.registerTypes('emergency', 'normal');
+this.wuphf.emergency('Oh no!');
+this.wuphf.normal('Back to business');
+```
+
 ### Styling ###
 
 The alert container has a class of `.wuphf-message-container`. Each

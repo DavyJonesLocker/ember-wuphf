@@ -1,5 +1,6 @@
 import { test, moduleFor } from 'ember-qunit';
 import Ember from 'ember';
+import Wuphf from '../../../services/wuphf';
 
 moduleFor('service:wuphf', 'WuphfService', {
   // Specify the other units that are required for this test.
@@ -61,4 +62,20 @@ test('warning timeout', function() {
     equal(service.get('content.length'), 0);
     start();
   }, 200);
+});
+
+test('register custom type', function() {
+  var service = this.subject();
+  service.registerType('emergency');
+  service.emergency('emergency test');
+  equal(service.get('content.firstObject.message'), 'emergency test');
+});
+
+test('register multiple custom types', function() {
+  var service = this.subject();
+  service.registerTypes('emergency', 'normal');
+  service.emergency('emergency test');
+  service.normal('normal test');
+  equal(service.get('content.firstObject.message'), 'emergency test');
+  equal(service.get('content.lastObject.message'), 'normal test');
 });
