@@ -6,6 +6,8 @@
 
 Easily add alert messages everywhere in your ember-cli apps
 
+[Learn more about WUPHF!](http://www.youtube.com/embed/8wfG8ngFvPk)
+
 ## Install ##
 
 ```bash
