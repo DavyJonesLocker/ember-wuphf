@@ -19,11 +19,15 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dockyard/ember-wuph.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "homepage": "https://github.com/dockyard/ember-wuph"
+  "author": "Brian Cardarella",
   "license": "MIT",
   "devDependencies": {
     "ember-cli": "stefanpenner/ember-cli",
