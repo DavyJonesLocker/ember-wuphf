@@ -112,6 +112,17 @@ this.wuphf.info('Info message', 5000);
 this.wuphf.pushObject({type: 'custom', message: 'Custom Message', timeout: 5000});
 ```
 
+### Clearing ###
+
+If you don't set a timeout the messages don't disappear automatically
+so sometimes you may want to clear them before showing a new message.
+As the queue is an Ember.ArrayProxy object you can use its `clear()` method.
+
+```js
+// clear messages queue
+this.wuphf.clear();
+```
+
 ## Authors ##
 
 * [Brian Cardarella](http://twitter.com/bcardarella)
