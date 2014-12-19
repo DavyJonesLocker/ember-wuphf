@@ -1,6 +1,6 @@
 {
   "name": "ember-wuphf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "alert service for ember-cli apps",
   "directories": {
     "doc": "doc",
