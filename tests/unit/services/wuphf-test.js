@@ -1,6 +1,5 @@
 import { test, moduleFor } from 'ember-qunit';
 import Ember from 'ember';
-import Wuphf from '../../../services/wuphf';
 
 moduleFor('service:wuphf', 'WuphfService', {
   // Specify the other units that are required for this test.
