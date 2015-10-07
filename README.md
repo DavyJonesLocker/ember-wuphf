@@ -1,5 +1,10 @@
 # Ember Wuphf
 
+## NOTE
+
+This library has been deprecated! You should instead use:
+https://github.com/poteto/ember-cli-flash
+
 [![Build](https://travis-ci.org/dockyard/ember-wuphf.svg?branch=master)](https://travis-ci.org/dockyard/ember-wuphf)
 
 ## About ##
